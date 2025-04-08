@@ -5,7 +5,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://sturdy-meme-qvgqpxq666fx97g-8000.app.github.dev/api/users')
+    fetch('https://sturdy-meme-qvgqpxq666fx97g-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

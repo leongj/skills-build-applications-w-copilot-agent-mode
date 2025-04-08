@@ -5,7 +5,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://sturdy-meme-qvgqpxq666fx97g-8000.app.github.dev/api/workouts')
+    fetch('https://sturdy-meme-qvgqpxq666fx97g-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);
